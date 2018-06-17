@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', sans-serif;
+  font-size: 1em;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffe600;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  transition: transform .5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .5s ease;
+}
+
+.slide-left-enter,
+.slide-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right-enter,
+.slide-right-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-left-enter-active,
+.slide-right-exit-active {
+  transition-delay: .5s;
+}
