@@ -2,7 +2,7 @@
   "name": "calendar_pal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fauxparse.github.io/calendar_pal",
+  "homepage": "https://flickelectric.github.io/calendar_pal",
   "dependencies": {
     "classnames": "^2.2.6",
     "moment": "^2.22.2",

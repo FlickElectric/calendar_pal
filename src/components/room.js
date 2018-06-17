@@ -81,7 +81,7 @@ export default class Room extends Component {
           show={showEvents}
           key="next"
           event={next}
-          title="Next:"
+          title={`Next in ${name}:`}
           free="(Nothing scheduled)"
         />
       </RoomContainer>
